@@ -1,0 +1,249 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #D9C043;
+  margin: 2rem 0;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 2rem;
+}
+
+/* Left Column */
+.left-column {
+  flex: 2;
+}
+
+.email, .payment-type {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.email p, .payment-type p {
+  color: #D9C043;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.email input {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.email input:focus {
+  outline: none;
+  border-color: #D9C043;
+  box-shadow: 0 0 0 2px rgba(217, 192, 67, 0.2);
+}
+
+/* Payment Buttons */
+.payment-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.payment-btns button {
+  background-color: rgb(26, 27, 28);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'inter', sans-serif;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.payment-btns button:hover {
+  background-color: rgb(224, 224, 224);
+  color: rgb(26, 27, 28);
+}
+
+.payment-btns button.clicked {
+  background-color: rgb(224, 224, 224);
+  color: rgb(26, 27, 28);
+}
+
+.payment-btns button img {
+  height: 30px;
+  width: auto;
+}
+
+/* Right Column - Order Summary */
+.right-column {
+  flex: 1;
+}
+
+.order-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.order-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.order-top p {
+  color: #D9C043;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.order-top a {
+  color: #9f9fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.order-top a:hover {
+  color: #D9C043;
+}
+
+/* Order Products List */
+.order-product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.product-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-name {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.product-quantity {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.product-price {
+  color: #D9C043;
+  font-weight: 600;
+}
+
+/* Order Summary */
+.order-summary {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.subtotal, .total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.total {
+  color: #D9C043;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Pay Button */
+.pay-button-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.pay-btn {
+  background-color: rgb(26, 27, 28);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'inter', sans-serif;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 200px;
+}
+
+.pay-btn:hover {
+  background-color: rgb(224, 224, 224);
+  color: rgb(26, 27, 28);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .left-column, .right-column {
+      width: 100%;
+  }
+
+  .email, .payment-type, .order-item {
+      width: auto;
+  }
+
+  .payment-btns button {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+  }
+
+  .payment-btns button img {
+      margin-top:0.5rem;
+}
+}

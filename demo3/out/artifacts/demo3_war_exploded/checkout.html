@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-Luxury/Checkout</title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Corrected link for fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="navbar">
+      <div class="logo">
+          <a href="index.html"><img src="assets/images/e-luxury-logo-hr.png" width="160px"></a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href='index.html#product'>Products</a></li> 
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="assets/images/shopping-bag-icon.png" width="30px" height="30px"></a>
+      <a href="profile.jsp"><img src="assets/images/profile-icon.png" width="30px" height="30px"></a>
+    </div>
+
+    <div class="page-title">
+      CHECKOUT
+    </div>
+    
+    <div class="container">
+      <div class="left-column">
+        <div class="email">
+          <p>EMAIL ADDRESS</p>
+          <input placeholder="john.doe@gmail.com">
+        </div>
+        <div class="payment-type">
+          <p>PAYMENT</p>
+          <div class="payment-btns">
+            <button>
+              <span>Online Banking</span>
+              <img src="icons/fpx.svg" alt="FPX Icon">
+            </button> 
+            <button>
+              <span>E-Wallet</span>
+              <img src="icons/tng.svg" alt="TNG Icon">
+            </button> 
+          </div>
+        </div>
+      </div>
+
+      <div class="right-column">
+        <div class="order-item">
+          <div class="order-top">
+            <p>YOUR ORDER</p>
+            <a href="cart.html">EDIT</a>            
+          </div>
+          <div id="order-products-list">
+            <!-- Products will be populated here by JavaScript -->
+          </div>
+          <div class="order-summary">
+            <div class="subtotal">
+              <span>Subtotal</span>
+              <span id="subtotal-amount">MYR 0.00</span>
+            </div>
+            <div class="total">
+              <span>Total</span>
+              <span id="total-amount">MYR 0.00</span>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+
+    <!-- Centered Pay Button below left column, aligned with title -->
+    <div class="pay-button-section">
+      <button class="pay-btn" onclick="window.location.href='payment-successful.html'">Pay</button>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Payment</h3>
+                    <p>Easily make payments using Touch 'n Go and Online Banking.</p>
+                    <div class="app-logo">
+                        <img src="assets/images/duit-now.png" alt="Duit Now Logo">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="assets/images/e-luxury-logo.png" alt="E-Luxury Logo">
+                    <p>Unlock your creativity with seamless digital downloads – e-books, games, and music, all at your fingertips!</p>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://web.facebook.com/r.php?entry_point=login" target="_blank">Facebook</a></li>
+                        <li><a href="https://signup.live.com/?lic=1" target="_blank">Email</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright © 2025 E-LUXURY. All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script src="JS/checkout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>E-LUXURY</title>
+        <link rel="icon" type="image/png" href="assets/images/e-luxury-favicon.png">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div class ="header"  style="background: url('assets/images/banner-1.jpg') no-repeat center center;">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/e-luxury-logo-hr.png" width="160px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                         <li><a href='#product'>Products</a></li> 
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="assets/images/shopping-bag-icon.png" width="30px" height="30px"></a>
+                <a href="profile.jsp"><img src="assets/images/profile-icon.png" width="30px" height="30px"></a>
+            </div>
+            
+            <div class="row-banner">
+                <div class="col-2" >
+                    <h1>Digital Heaven</h1>
+                    <p>Welcome to your one-stop shop for premium digital downloads —— <br>e-books, game and music. With instant download links, getting <br>what you need has never been faster or easier. Elevate your projects, <br>fuel your passion, and turn ideas into reality.</p>
+                    <a href='#product' class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!----------------------------------Categories------------------------------------>
+        <div class="categories" id="product">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <a href="#e-books">
+                            <img src="assets/books/books-icon.png" alt="Books Icon">
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a href="#music">
+                            <img src="assets/musics/music-icon.svg" alt="Music Icon">
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a href="#games">
+                            <img src="assets/game/game-icon.png" alt="Game Icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-container">
+            <form id="filterForm" class="filter-form">
+                <div class="filter-group">
+                    <label for="price">Sort by Price:</label>
+                    <select id="price" name="price">
+                        <option value="default">Default</option>
+                        <option value="high-to-low">Highest to Lowest</option>
+                        <option value="low-to-high">Lowest to Highest</option>
+                    </select>
+                </div>
+                <button type="submit" class="filter-btn">Apply Filter</button>
+            </form>
+        </div>
+
+        
+        <!------------------------------E-books------------------------------>
+        <div class="small-container">
+            <h2 class="title" id="e-books">E-books</h2>
+            <div class="row">
+                <!-- Products will be inserted here -->
+            </div>
+        </div>
+
+        <!------------------------------Music------------------------------>
+        <div class="small-container">
+            <h2 class="title" id="music">Music</h2>
+            <div class="row">
+                <!-- First 4 music products will be inserted here -->
+            </div>
+            <div class="row">
+                <!-- Next 4 music products will be inserted here -->
+            </div>
+        </div>
+
+        <!------------------------------Games------------------------------>
+        <div class="small-container">
+            <h2 class="title" id="games">Games</h2>
+            <div class="row">
+                <!-- Products will be inserted here -->
+            </div>
+        </div>    
+
+
+<!----------------------------------footer------------------------------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Payment</h3>
+                <p>Easily make payments using Touch 'n Go and Online Banking.</p>
+                <div class="app-logo">
+                    <img src="assets/images/fpx-logo.jpg" alt="Duit Now Logo">
+                    <img src="assets/images/tng.png" alt="Duit Now Logo">
+
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="assets/images/e-luxury-logo.png" alt="E-Luxury Logo">
+                <p>Unlock your creativity with seamless digital downloads – e-books, games, and music, all at your fingertips!</p>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://web.facebook.com/r.php?entry_point=login" target="_blank">Facebook</a></li>
+                    <li><a href="https://signup.live.com/?lic=1" target="_blank">Email</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <hr>
+        <p class="copyright">Copyright © 2025 E-LUXURY. All Rights Reserved</p>
+    </div>
+</div>  
+        
+        <!-----------------------------------js for toggle menu----------------------------------------------->
+        <script>
+            var menuItems=document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight="0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight="200px";
+                }
+                else{
+                    MenuItems.style.maxHeight="0px";
+                }
+            }
+        </script>
+        <script src="JS/index.js"></script>
+    </body>
+</html>
